@@ -1,38 +1,69 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: "Lato", sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.parent-container {
+  background-color: #000000;
+  background-image: linear-gradient(315deg, #000000 0%, #414141 74%);
+  height: 100vh;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.top-container {
+  padding-top: 15px;
+  max-width: 600px;
+  background: #f0eded;
+  height: 100vh;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/*TODOFORM STYLES START*/
+
+.app-title {
+  font-family: "Lato", sans-serif;
+  font-size: 36px;
+  border: 1px solid #0e0e0e;
+  margin: 0 auto 10px auto;
+  background: #ffffff;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 2px rgba(0, 0, 0, 0.23);
+  max-width: 400px;
+}
+
+.todo-form {
+  max-width: 400px;
+  margin: 15px auto 10px auto;
+}
+/*TODOFORM STYLES END*/
+
+/*TODOLIST STYLE START*/
+.todo-list {
+  margin: 0 auto 0 auto;
+  background: #e8e8e8;
+  border-radius: 4px;
+  padding: 5px;
+  max-width: 400px;
+}
+
+.todo {
+  background: #fff;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15);
+  padding: 3px 10px;
+  font-size: 16px;
+  margin-bottom: 6px;
+  border-radius: 3px;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
+  transition: 0.2s ease;
 }
 
-.App-link {
-  color: #61dafb;
+.todo:hover {
+  background: #dbdbdb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.todo-text {
+  margin-left: 0;
 }
+/*TODOLIST STYLE END*/
